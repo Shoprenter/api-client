@@ -1,0 +1,21 @@
+{
+    "name": "shoprenter/api-client",
+    "type": "library",
+    "description": "PHP client for ShopRenter API",
+    "authors": [
+        {
+            "name": "ShopRenter",
+            "email": "info@shoprenter.hu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ShopRenter\\": "src/"
+        }
+    },
+    "require" : {
+        "php" : ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
