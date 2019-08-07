@@ -36,7 +36,7 @@ $apiCall->execute('POST', $url, ['sku' => 'something', 'price' => 1000]);
 
 **DELETE request:**
 ```
-$response = $apiCall->execute('DELETE', $url);
+$apiCall->execute('DELETE', $url);
 ```
 
 ## Available HTTP methods
