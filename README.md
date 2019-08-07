@@ -4,6 +4,8 @@
 ```php
 <?php
 
+require_once 'vendor/autoload.php';
+
 use ShopRenter\ApiCall;
 
 $settings = [
@@ -25,6 +27,16 @@ try {
 } catch (Exception $exception) {
     echo 'Something bad happened...';
 }
+```
+
+**POST request:**
+```
+$apiCall->execute('POST', $url, ['sku' => 'something', 'price' => 1000]);
+```
+
+**DELETE request:**
+```
+$response = $apiCall->execute('DELETE', $url);
 ```
 
 ## Available HTTP methods
